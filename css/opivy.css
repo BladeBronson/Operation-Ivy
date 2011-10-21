@@ -1,0 +1,99 @@
+body {
+	background: url(../images/opivy.gif);
+	margin: 30px 0 100px 0;
+	text-align: center;
+}
+
+[contenteditable="true"] {
+	outline: 0;
+}
+
+.OperationIvy {
+	background: white;
+	border: 5px solid #333;
+	margin: 0 auto;
+	min-height: 500px;
+	padding: 10px;
+	text-align: left;
+	width: 700px;
+}
+
+.OperationIvy p {
+	background: #EEF;
+}
+
+
+.OperationIvy .menu {
+	-moz-border-radius: 5px;
+	background: rgba(0,0,0,.8);
+	color: white;
+	font-family: sans-serif;
+	font-size: 11px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.OperationIvy .menu a {
+	border-bottom: 1px solid rgba(255,255,255,.25);
+	color: white;
+	display: block;
+	line-height: 18px;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+.OperationIvy .menu a:hover {
+	background: rgba(255,255,255,.15);
+}
+.OperationIvy [data-icon="add"]:before {
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJvSURBVDjLpZPrS5NhGIf9W7YvBYOkhlkoqCklWChv2WyKik7blnNris72bi6dus0DLZ0TDxW1odtopDs4D8MDZuLU0kXq61CijSIIasOvv94VTUfLiB74fXngup7nvrnvJABJ/5PfLnTTdcwOj4RsdYmo5glBWP6iOtzwvIKSWstI0Wgx80SBblpKtE9KQs/We7EaWoT/8wbWP61gMmCH0lMDvokT4j25TiQU/ITFkek9Ow6+7WH2gwsmahCPdwyw75uw9HEO2gUZSkfyI9zBPCJOoJ2SMmg46N61YO/rNoa39Xi41oFuXysMfh36/Fp0b7bAfWAH6RGi0HglWNCbzYgJaFjRv6zGuy+b9It96N3SQvNKiV9HvSaDfFEIxXItnPs23BzJQd6DDEVM0OKsoVwBG/1VMzpXVWhbkUM2K4oJBDYuGmbKIJ0qxsAbHfRLzbjcnUbFBIpx/qH3vQv9b3U03IQ/HfFkERTzfFj8w8jSpR7GBE123uFEYAzaDRIqX/2JAtJbDat/COkd7CNBva2cMvq0MGxp0PRSCPF8BXjWG3FgNHc9XPT71Ojy3sMFdfJRCeKxEsVtKwFHwALZfCUk3tIfNR8XiJwc1LmL4dg141JPKtj3WUdNFJqLGFVPC4OkR4BxajTWsChY64wmCnMxsWPCHcutKBxMVp5mxA1S+aMComToaqTRUQknLTH62kHOVEE+VQnjahscNCy0cMBWsSI0TCQcZc5ALkEYckL5A5noWSBhfm2AecMAjbcRWV0pUTh0HE64TNf0mczcnnQyu/MilaFJCae1nw2fbz1DnVOxyGTlKeZft/Ff8x1BRssfACjTwQAAAABJRU5ErkJggg==);
+	position: relative;
+	top: 3px;
+	margin-right: 2px;
+}
+.OperationIvy [data-icon="delete"]:before {
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJdSURBVDjLpZP7S1NhGMf9W7YfogSJboSEUVCY8zJ31trcps6zTI9bLGJpjp1hmkGNxVz4Q6ildtXKXzJNbJRaRmrXoeWx8tJOTWptnrNryre5YCYuI3rh+8vL+/m8PA/PkwIg5X+y5mJWrxfOUBXm91QZM6UluUmthntHqplxUml2lciF6wrmdHriI0Wx3xw2hAediLwZRWRkCPzdDswaSvGqkGCfq8VEUsEyPF1O8Qu3O7A09RbRvjuIttsRbT6HHzebsDjcB4/JgFFlNv9MnkmsEszodIIY7Oaut2OJcSF68Qx8dgv8tmqEL1gQaaARtp5A+N4NzB0lMXxon/uxbI8gIYjB9HytGYuusfiPIQcN71kjgnW6VeFOkgh3XcHLvAwMSDPohOADdYQJdF1FtLMZPmslvhZJk2ahkgRvq4HHUoWHRDqTEDDl2mDkfheiDgt8pw340/EocuClCuFvboQzb0cwIZgki4KhzlaE6w0InipbVzBfqoK/qRH94i0rgokSFeO11iBkp8EdV8cfJo0yD75aE2ZNRvSJ0lZKcBXLaUYmQrCzDT6tDN5SyRqYlWeDLZAg0H4JQ+Jt6M3atNLE10VSwQsN4Z6r0CBwqzXesHmV+BeoyAUri8EyMfi2FowXS5dhd7doo2DVII0V5BAjigP89GEVAtda8b2ehodU4rNaAW+dGfzlFkyo89GTlcrHYCLpKD+V7yeeHNzLjkp24Uu1Ed6G8/F8qjqGRzlbl2H2dzjpMg1KdwsHxOlmJ7GTeZC/nesXbeZ6c9OYnuxUc3fmBuFft/Ff8xMd0s65SXIb/gAAAABJRU5ErkJggg==);
+	position: relative;
+	top: 3px;
+	margin-right: 2px;
+}
+
+.OpIvy-Table {
+	position: relative;
+}
+.OpIvy-Table .control {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAp1JREFUeNqkU11Ik1EYfr75UzjnrBnOWeicWpJQNyqFXYU3gRKNCsSfi66luwq66q7LwCCLLvIHKWgsvFz0g6PQ3STI0Lk0TTen29z2beP7PN/5zuls4NSsm3rh5eW857wPz/s+55U45/gfK/494XwecGiM9nLKBnaJZqWcgYNFADamUzY5/eDy8sH30kEG10cWnIRow3Yzr2mvq0RFaVE+n1IovMEtzIezm6JiyPfoqusIQM8zv5Mo2mhXU5mxtdaEUJwgklKgMw5zWRFs5uMIxtJwf1jOCt6Dvic9rgJA99P5Bk2j3q5Go+2s1YSZ5TgYYzBIEtgBhi3Wcqwn0njnCYbB2RXfi1srhtyF6LnPXsFt9VVGfAnEQFQKbZeBaTwf99y/kUR9lRnNjRU2rmh9udo8ANH1/o56C9a3s6CUgjJdUKcgVMvHPc8oClajMjov1kEipL+gAlFI7QlTMQLhBDQBcLf7HOzVpkPqeOZCmFmIIBKX0Ww7Da4rtfsMdoloSYgFCZpO8NITwFIoVSh+/y2Eqdk1rG/JoEQDl0RS11EAEKdQPKvCYiwBoww7soLJz0FsxLLwBbYxNfMDVKNiJgRm4zFsyWlIEgvtAxA6Pu3fQN0po5BFEkkJ0aSKx2/mMOpZgi6GaWCSANFgt5rh9X4XRXx8H0BVJhYWY+FAJIFLLdWgugZVVZDJppGRk8ITSMs7uNBkw2pSxoo/JyOZOPSR2u68dvK0OnrtRquxocqExbUoojvpfEsnK8vQdMYiijP4+PZTFlLJoM99z3XkK7fdfuUUyMOO8zU1nR0OWMpLc1SxnVIx/TWAn/7gpiQZhnzu+64/7kLO2m+OODjXe4UsA2CqVUQxMEksE8aERpOz7od/X6Z/sV8CDABSVIJj7apl5AAAAABJRU5ErkJggg==) top right no-repeat;
+	min-height: 16px;
+	min-width: 16px;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+}
+.OpIvy-Table .control:hover {
+	background: transparent;
+}
+.OpIvy-Table table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.OpIvy-Table td {
+	border: 1px solid #CCC;
+	height: 50px;
+	min-width: 20px;
+}
+
+
+
+#Source {
+	background: rgba(0,0,0,.8);
+	border: 0;
+	border-top: 1px solid #666;
+	bottom: 0;
+	color: #CCC;
+	height: 50px;
+	left: 0;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+}

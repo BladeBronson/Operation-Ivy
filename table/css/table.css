@@ -1,0 +1,8 @@
+td {
+	border: 1px solid #000;
+}
+
+.disable-table table {
+	background: red;
+	-moz-user-select: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operation Ivy - Table Test</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+	<script src="js/table.js"></script>
+	<link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+	<article contenteditable="true">
+		<p>This is a contenteditable area</p>
+		<p>These are a series of paragraphs in the contenteditable area</p>
+		<p>Here comes a table</p>
+		<table>
+			<tr>
+				<td>
+					<p>This is a paragraph in a table. It is also editable because it is within the contenteditable area</p>
+				</td>
+				<td>
+					<p>You should be able to copy the contents of these cells...</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>But with a little JavaScript magic...</p>
+				</td>
+				<td>
+					<p>You should not be able to select across cells.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					The reason is that we want to treat tables like objects. The contents should be able to be edited, etc
+				</td>
+				<td>
+					But parts of the structure shouldn't be able to be copied to the clipboard.
+				</td>
+			</tr>
+		</table>
+		<p>And in closing...</p>
+		<p>...a couple more paragraphs</p>
+	</article>	
+</body>
+</html>

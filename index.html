@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operation Ivy</title>
+	<link rel="stylesheet" href="css/opivy.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.htmlClean.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/opivy.js"></script>
+</head>
+<body>
+	<button class="bold">Bold</button>
+	<article class="OperationIvy" contenteditable="true">
+		<p>First paragraph</p>
+		<p>Second <i>ignore this</i> paragraph</p>
+		<p>Third paragraph already <b>has some bold</b> text, so watch out for that.</p>
+	</article>
+	
+	<!-- Operation Ivy Templates -->
+	<script type="text/template" id="TEMPLATE-OpIvy-Table">
+		<div class="OpIvy-Table" contenteditable="false">
+			<div class="control destroy-contents"></div>
+			<table>
+				<tr>
+					<td contenteditable="true"></td>
+					<td contenteditable="true"></td>
+				</tr>
+				<tr>
+					<td contenteditable="true"></td>
+					<td contenteditable="true"></td>
+				</tr>
+			</table>
+		</div>
+	</script>
+	<script type="text/template" id="TEMPLATE-OpIvy-Table-Control-Menu">
+		<ul class="menu">
+			<li><a href="#" data-function="addRow" data-icon="add">Add Row</a></li>
+			<li><a href="#" data-function="deleteRow" data-icon="delete">Delete Row</a></li>
+			<li><a href="#" data-function="addColumn" data-icon="add">Add Column</a></li>
+			<li><a href="#" data-function="deleteColumn" data-icon="delete">Delete Column</a></li>
+		</ul>
+	</script>
+	<!-- End Operation Ivy Templates -->
+	
+	<textarea id="Source"></textarea>
+</body>
+</html>
